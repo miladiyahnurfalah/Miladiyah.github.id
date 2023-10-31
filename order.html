@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Homepage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="order.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light fixed-top">
@@ -17,20 +18,20 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about/">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Others
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="/galery/">Gallery</a></li>
-              <li><a class="dropdown-item" href="/contact/">Contact</a></li>
+              <li><a class="dropdown-item" href="galery.html">Gallery</a></li>
+              <li><a class="dropdown-item" href="contact.html">Contact</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="/order/">Order Now</a></li>
+              <li><a class="dropdown-item" href="order.html">Order Now</a></li>
             </ul>
           </li>
         </ul>
@@ -40,33 +41,55 @@
         </form>
       </div>
     </div>
-  </nav><br>
+  </nav>
 
-  <div class="container mt-5">
-    <div class="card mt-5 shadow">
-        <div class="row">
-            <div class="col-md-6 py-5 bg-dark">
-                <h1 class="text-light text-center">Contact</h1>
-                <p class="text-light text-center fs-7 fw-light">Silahkan Tuliskan kritik dan saran yang membangun agar kami dapat memberikan pelayanan yang lebih baik lagi </p>
-                <p class="text-light text-center fs-7 fw-light">Terimakasih atas kritik dan saran yang telah anda berikan</p>
+  <section id="kontak" class="kontak" pt-5 pb-5 style="background-color: rgb(237, 237, 237);">
+    <div class="container">
+      <h1 class="pt-5">Order Now</h1>
+      <div class="row">
+        <div class="col-md-10 col-xl-8">
+          <form>
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama Lengkap</label>
+            <input id="nama" class="form-control" placeholder="Masukkan Nama Anda">
             </div>
-            <div class="col-md-6 py-5">
-                <form action="" class="px-5">
-                    <input type="text" class="form-control" placeholder="Nama Lengkap" 
-                    style="background-color: #a5a5a5;">
-                    <input type="Email" class="form-control mt-3" placeholder="Email" 
-                    style="background-color:#a5a5a5;"> 
-                    <textarea class="form-control mt-3" id="exampleFormControlTextarea1" placeholder="Ketik Kritik dan Saran Anda"  style="background-color:#a5a5a5;"></textarea>
-                </form>
-                <div class="text-center py-5">
-                    <button class="btn btn-dark rounded-pill px-5">Send Message</button>
-                </div>
+            <div class="mb-3">
+              <label for="alamat" class="form-label">Alamat Lengkap</label>
+            <input id="Alamat" class="form-control" placeholder="Masukkan Alamat Anda">
             </div>
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesanan Anda</label>
+            <textarea class="form-control" id="pesan" rows="4"></textarea>
+            </div>
+            <div class="mb-3">
+              <div class="form-label">
+                Domisili
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Domisili" id="jakarta">
+                <label class="form-check-label" for="jakarta">Jakarta</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Domisili" id="semarang">
+                <label class="form-check-label" for="semarang">Semarang</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Domisili" id="yogyakarta">
+                <label class="form-check-label" for="yogyakarta">Yogyakarta</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-dark form-control">Order Now</button> 
+            </div>
+          </form>
         </div>
+      </div>
     </div>
-  </div>
+  </section>
+
 
    <!-- footer start -->
+
    <div class="footer mt-5">
     <div  class="footer-section text-center">
       <h3>Peta</h3>
@@ -88,9 +111,8 @@
         </ul>
     </div>
  </div>
-   <!-- footer end -->
 
-
+  <!-- footer end -->
 
   <div onclick="scrollToTop()" class="scrollTop">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12 2.75a9.25 9.25 0 1 0 0 18.5a9.25 9.25 0 0 0 0-18.5ZM1.25 12C1.25 6.063 6.063 1.25 12 1.25S22.75 6.063 22.75 12S17.937 22.75 12 22.75S1.25 17.937 1.25 12Zm7.22-1.53l3-3a.75.75 0 0 1 1.06 0l3 3a.75.75 0 1 1-1.06 1.06l-1.72-1.72V16a.75.75 0 0 1-1.5 0V9.81l-1.72 1.72a.75.75 0 0 1-1.06-1.06Z" clip-rule="evenodd"/></svg>
@@ -101,6 +123,7 @@
       window.scrollTo(0, 0);
     }
   </script>
+
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
